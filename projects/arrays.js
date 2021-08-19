@@ -171,7 +171,54 @@ let secondPositive = second.filter(function(value){
 
 console.log(secondPositive);
 
-//hello
+
+
+//mapping
+first = [4,2,3];
+second = first.map(n=>n**2);
+console.log("After mapping "+second);
+
+//mapping to ojects and chaoining
+second = first.map(n=>( {value:n+2} ));
+console.log("After mapping to objects ");
+console.log(second);
+
+second= first.filter(n=>n%2==0).map(n=>( {value:n+9} )).filter(n=>( (n.value) %2) == 1);;
+console.log("after chaoining");
+console.log(second);
+
+
+//reducing array
+second = first.reduce((accumulator, currentValue)=>accumulator+currentValue, 0);
+console.log("After reducing" +second);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
